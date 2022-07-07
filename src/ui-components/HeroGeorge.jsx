@@ -35,7 +35,7 @@ export default function HeroGeorge(props) {
         overflow="hidden"
         position="relative"
         padding="120px 120px 120px 120px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(6,47,99,1)"
         {...getOverrideProps(overrides, "Left")}
       >
         <Flex
@@ -85,7 +85,7 @@ export default function HeroGeorge(props) {
               fontFamily="Inter"
               fontSize="15px"
               fontWeight="700"
-              color="rgba(204,187,0,1)"
+              color="rgba(255,238,51,1)"
               lineHeight="30px"
               textAlign="center"
               display="flex"
@@ -107,7 +107,7 @@ export default function HeroGeorge(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="700"
-              color="rgba(204,187,0,1)"
+              color="rgba(255,238,51,1)"
               lineHeight="24px"
               textAlign="center"
               display="flex"

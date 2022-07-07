@@ -834,7 +834,7 @@ export default createTheme({
         large: { size: { value: "{fontSizes.xxxl.value}" } },
         default: { size: { value: "{fontSizes.xl.value}" } },
         small: { size: { value: "{fontSizes.small.value}" } },
-        filled: { color: { value: "{colors.brand.secondary.80.value}" } },
+        filled: { color: { value: "hsl(55, 100%, 50%)" } },
         empty: { color: { value: "{colors.background.tertiary.value}" } },
       },
       select: {

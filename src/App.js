@@ -1,5 +1,5 @@
 import './App.css';
-import { MarketingFooter, BathroomCardCollection, HeroGeorge} from "./ui-components";
+import { TestFooter, BathroomCardCollection, HeroGeorge} from "./ui-components";
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import { View, Card, Grid, Divider, Heading } from '@aws-amplify/ui-react';
 
@@ -26,7 +26,7 @@ function App() {
         margin="0 auto"
         />
       </Card>
-      <MarketingFooter
+      <TestFooter
       width="100%" />
     </div>
   );

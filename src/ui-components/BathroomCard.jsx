@@ -39,7 +39,7 @@ export default function BathroomCard(props) {
         width="324px"
         height="318px"
         padding="32px 32px 32px 32px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(6,47,99,1)"
         {...getOverrideProps(overrides, "Card Area")}
       >
         <Text
@@ -64,8 +64,8 @@ export default function BathroomCard(props) {
         <Text
           fontFamily="Inter"
           fontSize="16px"
-          fontWeight="400"
-          color="rgba(204,187,0,1)"
+          fontWeight="700"
+          color="rgba(255,238,51,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
@@ -98,7 +98,7 @@ export default function BathroomCard(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="400"
-          color="rgba(13,26,38,1)"
+          color="rgba(255,238,51,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
@@ -131,6 +131,7 @@ export default function BathroomCard(props) {
             shrink="0"
             overflow="hidden"
             position="relative"
+            boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
             padding="0px 0px 0px 0px"
             type="chat"
             {...getOverrideProps(overrides, "MyIcon")}
@@ -139,7 +140,7 @@ export default function BathroomCard(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(255,238,51,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
