@@ -15,7 +15,8 @@ function App() {
         width="100%"
         marginBottom="15px"
         overrides={{image: {objectFit: "contain" }} }
-        />
+        />062F63
+
          <Divider
             orientation="horizontal" />
          <Heading 
