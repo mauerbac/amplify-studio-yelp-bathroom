@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nycsummit-staging-143330-authRole",
+      "UnauthRoleArn": "arn:aws:iam::603489998280:role/amplify-nycsummit-staging-143330-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::603489998280:role/amplify-nycsummit-staging-143330-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nycsummit-staging-143330-deployment",
+      "UnauthRoleName": "amplify-nycsummit-staging-143330-unauthRole",
+      "StackName": "amplify-nycsummit-staging-143330",
+      "StackId": "arn:aws:cloudformation:us-east-1:603489998280:stack/amplify-nycsummit-staging-143330/49ac4600-f238-11ec-af40-122e155993f5",
+      "AmplifyAppId": "d2ddguywmojniz"
+    },
+    "categories": {
+      "auth": {
+        "nycsummit": {}
+      }
+    }
+  }
+}

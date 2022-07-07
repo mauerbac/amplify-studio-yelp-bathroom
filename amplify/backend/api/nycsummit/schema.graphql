@@ -1,0 +1,9 @@
+type Bathrooms @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  rating: Int
+  address: String
+  description: String
+  image_url: String
+}
+ 
