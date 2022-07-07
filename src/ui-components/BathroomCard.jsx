@@ -65,7 +65,7 @@ export default function BathroomCard(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="400"
-          color="rgba(153,140,0,1)"
+          color="rgba(204,187,0,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
