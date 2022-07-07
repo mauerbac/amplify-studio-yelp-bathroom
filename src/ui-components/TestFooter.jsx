@@ -6,10 +6,20 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Text, View } from "@aws-amplify/ui-react";
 export default function TestFooter(props) {
   const { overrides, ...rest } = props;
+  const rectangleOneOneSixFourOnClick = useNavigateAction({
+    type: "url",
+    url: "",
+  });
+  const builtbyMattAuerbachfortheAWSNYCSummitTwoZeroTwoTwoOnClick =
+    useNavigateAction({ type: "url", url: "https://twitter.com/mauerbac" });
+  const aWSAmplifyOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <View
       width="1440px"
@@ -27,6 +37,9 @@ export default function TestFooter(props) {
         left="0%"
         right="0%"
         padding="0px 0px 0px 0px"
+        onClick={() => {
+          rectangleOneOneSixFourOnClick();
+        }}
         {...getOverrideProps(overrides, "Rectangle 1164")}
       ></View>
       <Text
@@ -48,6 +61,9 @@ export default function TestFooter(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Built by Matt Auerbach for the AWS NYC Summit 2022"
+        onClick={() => {
+          builtbyMattAuerbachfortheAWSNYCSummitTwoZeroTwoTwoOnClick();
+        }}
         {...getOverrideProps(
           overrides,
           "Built by Matt Auerbach for the AWS NYC Summit 2022"
@@ -73,6 +89,9 @@ export default function TestFooter(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="AWS Amplify"
+        onClick={() => {
+          aWSAmplifyOnClick();
+        }}
         {...getOverrideProps(overrides, "AWS Amplify")}
       ></Text>
     </View>
