@@ -6,10 +6,18 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
 export default function HeroGeorge(props) {
   const { overrides, ...rest } = props;
+  const buttonOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://www.figma.com/community/file/1047600760128127424",
+  });
   return (
     <Flex
       gap="0"
@@ -31,7 +39,7 @@ export default function HeroGeorge(props) {
         justifyContent="center"
         alignItems="center"
         shrink="0"
-        height="279.75px"
+        height="289px"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "HeroMessage")}
@@ -40,7 +48,7 @@ export default function HeroGeorge(props) {
           fontFamily="Inter"
           fontSize="43px"
           fontWeight="700"
-          color="rgba(254,1,22,1)"
+          color="rgba(72,231,24,1)"
           lineHeight="24px"
           textAlign="center"
           display="flex"
@@ -90,7 +98,7 @@ export default function HeroGeorge(props) {
           <Flex
             padding="0px 0px 0px 0px"
             width="675px"
-            height="172.75px"
+            height="182px"
             shrink="0"
             position="relative"
             {...getOverrideProps(overrides, "Group 28")}
@@ -122,15 +130,20 @@ export default function HeroGeorge(props) {
               display="flex"
               gap="0"
               position="absolute"
-              top="132.75px"
-              left="262.5px"
+              top="113px"
+              left="221px"
               direction="row"
+              width="234px"
+              height="69px"
               justifyContent="center"
               alignItems="center"
               size="default"
               isDisabled={false}
               variation="primary"
               children="Primary Button"
+              onClick={() => {
+                buttonOnClick();
+              }}
               {...getOverrideProps(overrides, "Button")}
             ></Button>
           </Flex>

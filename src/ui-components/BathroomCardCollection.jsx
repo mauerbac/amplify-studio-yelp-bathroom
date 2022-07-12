@@ -6,6 +6,7 @@
 
 /* eslint-disable */
 import React from "react";
+import { SortDirection } from "@aws-amplify/datastore";
 import { Bathrooms } from "../models";
 import {
   getOverrideProps,
@@ -15,17 +16,19 @@ import BathroomCard from "./BathroomCard";
 import { Collection } from "@aws-amplify/ui-react";
 export default function BathroomCardCollection(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
+  const itemsPagination = { sort: (s) => s.rating(SortDirection.DESCENDING) };
   const itemsDataStore = useDataStoreBinding({
     type: "collection",
     model: Bathrooms,
+    pagination: itemsPagination,
   }).items;
   const items = itemsProp !== undefined ? itemsProp : itemsDataStore;
   return (
     <Collection
       type="grid"
-      isSearchable={true}
+      isPaginated={true}
       searchPlaceholder="Search..."
-      templateColumns="1fr 1fr"
+      itemsPerPage={6}
       autoFlow="row"
       alignItems="stretch"
       justifyContent="stretch"

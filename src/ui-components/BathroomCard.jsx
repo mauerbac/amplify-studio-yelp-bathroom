@@ -16,6 +16,7 @@ export default function BathroomCard(props) {
       height="318px"
       position="relative"
       padding="0px 0px 0px 0px"
+      backgroundColor="rgba(255,255,255,1)"
       {...rest}
       {...getOverrideProps(overrides, "BathroomCard")}
     >
@@ -38,14 +39,14 @@ export default function BathroomCard(props) {
         width="324px"
         height="318px"
         padding="32px 32px 32px 32px"
-        backgroundColor="rgba(6,47,99,1)"
+        backgroundColor="rgba(72,231,24,1)"
         {...getOverrideProps(overrides, "Card Area")}
       >
         <Text
           fontFamily="Inter"
           fontSize="20px"
           fontWeight="700"
-          color="rgba(254,1,22,1)"
+          color="rgba(255,208,0,1)"
           lineHeight="25px"
           textAlign="left"
           display="flex"
@@ -64,7 +65,7 @@ export default function BathroomCard(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="700"
-          color="rgba(255,238,51,1)"
+          color="rgba(255,218,51,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
@@ -97,7 +98,7 @@ export default function BathroomCard(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="400"
-          color="rgba(255,238,51,1)"
+          color="rgba(255,218,51,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
@@ -140,7 +141,7 @@ export default function BathroomCard(props) {
               paths={[
                 {
                   d: "M2 2L18 2L18 14L3.17 14L2 15.17L2 2ZM2 0C0.9 0 0.00999999 0.9 0.00999999 2L0 20L4 16L18 16C19.1 16 20 15.1 20 14L20 2C20 0.9 19.1 0 18 0L2 0ZM4 10L12 10L12 12L4 12L4 10ZM4 7L16 7L16 9L4 9L4 7ZM4 4L16 4L16 6L4 6L4 4Z",
-                  fill: "rgba(255,238,51,1)",
+                  fill: "rgba(255,218,51,1)",
                   fillRule: "nonzero",
                 },
               ]}
@@ -156,7 +157,7 @@ export default function BathroomCard(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(255,238,51,1)"
+            color="rgba(255,218,51,1)"
             lineHeight="24px"
             textAlign="left"
             display="flex"
