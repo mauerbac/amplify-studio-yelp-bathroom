@@ -104,8 +104,8 @@ Then call it `<BathroomCardCollectionThree />`
 
 ## Putting it together 
 
-1. Copy/paste the [App.js code](https://github.com/mauerbac/amplify-studio-yelp-bathroom/blob/main/src/App.js)
-2. Copy/paste the [Index.js code](https://github.com/mauerbac/amplify-studio-yelp-bathroom/blob/main/src/index.js)
+1. Copy/paste the [App.js code](https://github.com/mauerbac/amplify-studio-yelp-bathroom/blob/main/src/App.js) - Simply imported & referenced the 4 components and added a few CSS properties. 
+2. Copy/paste the [Index.js code](https://github.com/mauerbac/amplify-studio-yelp-bathroom/blob/main/src/index.js) - installed Amplify. 
 3. Want the same font? Put `@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');` at the top of `App.css`
 
 Run the app! `npm start` 
