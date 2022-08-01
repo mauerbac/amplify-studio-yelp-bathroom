@@ -1,6 +1,6 @@
 # Amplify Studio Tutorial 
 
-Building Yelp for Bathrooms. This was my demo for the AWS NYC Summit talk. 
+Build a mini Yelp for Bathrooms. This was my demo for the AWS NYC Summit talk. 
 
 It's inspired by Seinfeld and the [scene where George Costanza](https://www.youtube.com/watch?v=JYVBRQ7t46g) says "give me an address, ill tell you the best bathroom in the city." 
 
