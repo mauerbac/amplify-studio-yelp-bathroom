@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Amplify Studio Tutorial 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Building Yelp for Bathrooms. This was my demo for the AWS NYC Summit talk. 
 
-## Available Scripts
+It's inspired by Seinfeld and the [scene where George Costanza](https://www.youtube.com/watch?v=JYVBRQ7t46g) says "give me an address, ill tell you the best bathroom in the city." 
 
-In the project directory, you can run:
+<img src='screenshot_1.png' height='425' />
 
-### `npm start`
+View the running demo here [https://main.d2ddguywmojniz.amplifyapp.com/](https://main.d2ddguywmojniz.amplifyapp.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Amplify Studio 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Amplify Studio](https://aws.amazon.com/amplify/studio/) is a new service apart of the Amplify portfilio -- it helps frontend developers more easily build UIs by converting Figma files to human-readable react code! You don't have to be a CSS wiz! 
 
-### `npm test`
+# Building the App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step-by-step on how to configure, develop & deploy this app on AWS.
 
-### `npm run build`
+## Housekeeping
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Studio Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Studio will orchestrate handling your data APIs, generating your React code from Figma and more, like authentication! 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Sign-in to AWS or [Create an Account](https://us-west-2.console.aws.amazon.com)
+2. Head over to AWS Amplify, New app -> Build an app. Give it a name, deploy. 
+3. Launch Studio! FYI, you can grant co-workers access to studio without requiring an AWS account.
+4. Let's add our data models. Use the suggested model below called `Bathrooms`
 
-### `npm run eject`
+```
+name -> String
+rating -> Float
+address -> String
+description -> String
+image_url -> String 
+```
+5. Save, and deploy. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Figma Setup 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We reccomend starting with our [base Figma template](https://www.figma.com/community/file/1047600760128127424) and altering/building components from there. These privatives are tied to [Amplify UI library](https://ui.docs.amplify.aws/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. For this tutorial, you can use my [Figma File](https://www.figma.com/file/OKViErrJvjjAgTqNCD4azZ/AWS-NYC-Summit-2022?node-id=861%3A3635) where I've configured 4 components to match the above design. The components are called:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+NavBar
+BathroomCard
+HeroGeorge
+TestFooter
+```
+2. Play around with the file, and create or alter a component of your own! We will use shortly.
 
-## Learn More
+<img src='screenshot_2.png' height=300 />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Local Dev Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Create a base React app to give us a starting point. 
+2. I used CRA - `npx npx create-react-app .`
+3. `npm install` & `npm start` - confirm this works as expected
+4. Install Amplify CLI (Amplify's toolchain) `npm install -g @aws-amplify/cli`
+5. Install Amplify's UI lib `npm install aws-amplify @aws-amplify/ui-react`
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
