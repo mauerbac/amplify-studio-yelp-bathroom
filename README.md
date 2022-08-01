@@ -8,7 +8,7 @@ It's inspired by Seinfeld and the [scene where George Costanza](https://www.yout
 
 View the running demo here [https://main.d2ddguywmojniz.amplifyapp.com/](https://main.d2ddguywmojniz.amplifyapp.com/)
 
-## Amplify Studio 
+## What is Amplify Studio?
 
 [Amplify Studio](https://aws.amazon.com/amplify/studio/) is a new service apart of the Amplify portfolio -- it helps frontend developers more easily build UIs by converting Figma files to human-readable react code! You don't have to be a CSS wiz! 
 
@@ -127,6 +127,7 @@ Yellow: #ffea00
 ```
 2. Add Authentication with one click! Click the Authentication tab in Studio. Keep the defaults and click Deploy. Then [uncomment Line 34](https://github.com/mauerbac/amplify-studio-yelp-bathroom/blob/main/src/App.js#L34) in `App.js` , comment out line 35.
 3. Check out [overrides](https://docs.amplify.aws/console/uibuilder/override/)
+4. Deploy on Amplify Hosting with one command `amplify publish` 
 
 ## Need Help?
 
